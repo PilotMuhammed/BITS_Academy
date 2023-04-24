@@ -14,8 +14,4 @@ public class controlPanel extends AppCompatActivity {
         setContentView(R.layout.activity_control_panel);
     }
 
-    public void show(View view) {
-        Intent intent = new Intent(controlPanel.this,ViewPage.class);
-        startActivity(intent);
-    }
 }
