@@ -15,7 +15,7 @@ public class signupPage extends AppCompatActivity {
     }
 
     public void sendDataSignup(View view) {
-        Intent intent = new Intent(signupPage.this,controlPanel.class);
+        Intent intent = new Intent(signupPage.this,ViewPage.class);
         startActivity(intent);
     }
 }

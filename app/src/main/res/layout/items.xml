@@ -12,10 +12,11 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/item_1"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/item_1" />
 
         <TextView
             android:id="@+id/tvItem_1"

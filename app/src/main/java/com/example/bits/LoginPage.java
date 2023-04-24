@@ -16,7 +16,7 @@ public class LoginPage extends AppCompatActivity {
     }
 
     public void sendDataLogin(View view) {
-        Intent intent = new Intent(LoginPage.this,controlPanel.class);
+        Intent intent = new Intent(LoginPage.this,ViewPage.class);
         startActivity(intent);
     }
 }
