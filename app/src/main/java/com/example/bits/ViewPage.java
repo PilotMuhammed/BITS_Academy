@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,9 @@ import java.util.ArrayList;
 
 public class ViewPage extends AppCompatActivity {
 
+    TextView showUser;
+    ImageView imgClick;
+
 //    RecyclerView rv_1 ;
 //    ArrayList<String> dataSource;
 //    LinearLayoutManager linearLayoutManager;
@@ -27,6 +31,20 @@ public class ViewPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_page);
+
+        /*--- Code Show UserName inside Text View ---*/
+        showUser = findViewById(R.id.tvUser);
+        Bundle bundle = getIntent().getExtras();
+        String user = bundle.getString("");
+        showUser.setText(user);
+
+        /*--- Method Click on image profile  ---*/
+        imgClick = findViewById(R.id.imageViewProfile);
+        imgClick.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this,controlPanel.class);
+            intent.putExtra("",user);
+            startActivity(intent);
+        });
 
         // Setting the data source
 //        dataSource = new ArrayList<>();
@@ -45,10 +63,6 @@ public class ViewPage extends AppCompatActivity {
 //        rv_1.setAdapter(myRvAdapter);
     }
 
-    public void show_profile(View view) {
-        Intent intent = new Intent(ViewPage.this,controlPanel.class);
-        startActivity(intent);
-    }
 
 //    class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyHolder>{
 //        ArrayList<String> data;

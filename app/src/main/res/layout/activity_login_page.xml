@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/inputUSer"
+            android:id="@+id/inputUser"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
@@ -189,7 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="32dp"
-            android:background="@drawable/green_button"
+            android:background="@drawable/main_btn_bg"
             android:onClick="sendDataLogin"
             android:text="Login"
             android:textColor="#ffffff"
