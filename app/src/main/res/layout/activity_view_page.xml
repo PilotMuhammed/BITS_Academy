@@ -240,13 +240,13 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp">
                         <!-- Start Card One -->
                         <androidx.cardview.widget.CardView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
                             android:layout_margin="10dp"
-                            app:cardCornerRadius="10dp"
                             app:cardElevation="10dp">
 
                             <LinearLayout
@@ -256,15 +256,15 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="160dp"
-                                    android:layout_height="110dp"
-                                    android:src="@drawable/course_apps" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_1" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Andriod Apps"
-                                    android:textSize="18sp"
+                                    android:text="Programming"
+                                    android:textSize="19sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
@@ -273,29 +273,27 @@
 
                         <!-- Start Card Two -->
                         <androidx.cardview.widget.CardView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
                             android:layout_margin="10dp"
-                            app:cardCornerRadius="10dp"
                             app:cardElevation="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:gravity="center_horizontal"
-                                android:orientation="vertical"
-                                android:padding="10dp">
+                                android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/coruse_websecurity" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_2"/>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Web Security"
-                                    android:textSize="18sp"
+                                    android:text="Mobile Apps"
+                                    android:textSize="19sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
@@ -304,10 +302,9 @@
 
                         <!-- Start Card Three -->
                         <androidx.cardview.widget.CardView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
                             android:layout_margin="10dp"
-                            app:cardCornerRadius="10dp"
                             app:cardElevation="10dp">
 
                             <LinearLayout
@@ -317,15 +314,15 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/coruse_js" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_3" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="JavaScript"
-                                    android:textSize="18sp"
+                                    android:text="Gatsby.js"
+                                    android:textSize="19sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
@@ -334,10 +331,9 @@
 
                         <!-- Start Card Four -->
                         <androidx.cardview.widget.CardView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
                             android:layout_margin="10dp"
-                            app:cardCornerRadius="10dp"
                             app:cardElevation="10dp">
 
                             <LinearLayout
@@ -347,15 +343,15 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/coruse_java" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_4" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Java"
-                                    android:textSize="18sp"
+                                    android:text="Next.js"
+                                    android:textSize="19sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
@@ -364,10 +360,9 @@
 
                         <!-- Start Card Five -->
                         <androidx.cardview.widget.CardView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
                             android:layout_margin="10dp"
-                            app:cardCornerRadius="10dp"
                             app:cardElevation="10dp">
 
                             <LinearLayout
@@ -377,20 +372,78 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="150dp"
-                                    android:layout_height="120dp"
-                                    android:src="@drawable/course_asp" />
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_5" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="ASP.net"
-                                    android:textSize="18sp"
+                                    android:text="Open Source"
+                                    android:textSize="19sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
                         <!-- End Card Five -->
+
+                        <!-- Start Card Sex -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_margin="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_6" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nuxt js"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <!-- End Card Sex -->
+
+                        <!-- Start Card Seven -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="155dp"
+                            android:layout_height="180dp"
+                            android:layout_margin="10dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/c_7" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Static Website"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <!-- End Card Seven -->
 
                     </LinearLayout>
 
@@ -453,6 +506,7 @@
                         android:orientation="horizontal">
                         <!-- Start Card One -->
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/Card_new_1"
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:layout_margin="10dp"
@@ -512,6 +566,9 @@
                         <!-- End Card Two -->
 
                         <!-- Start Card Three -->
+                        <!-- End Card Three -->
+
+                        <!-- Start Card Four -->
                         <androidx.cardview.widget.CardView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
@@ -539,9 +596,7 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
-                        <!-- End Card Three -->
 
-                        <!-- Start Card Four -->
                         <androidx.cardview.widget.CardView
                             android:layout_width="200dp"
                             android:layout_height="150dp"

@@ -1,26 +1,18 @@
 package com.example.bits;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class ViewPage extends AppCompatActivity {
 
     TextView showUser;
     ImageView imgClick;
+    CardView c1;
 
 //    RecyclerView rv_1 ;
 //    ArrayList<String> dataSource;
@@ -31,6 +23,13 @@ public class ViewPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_page);
+
+        /*--- Show Card One From Section New  ---*/
+        c1 = findViewById(R.id.Card_new_1);
+        c1.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this, details_1.class);
+            startActivity(intent);
+        });
 
         /*--- Code Show UserName inside Text View ---*/
         showUser = findViewById(R.id.tvUser);
