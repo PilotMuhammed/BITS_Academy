@@ -85,7 +85,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="60dp"
                         android:layout_height="70dp"
-                        android:background="#000000"
+                        android:background="#EEEEEE"
                         android:layout_weight="0.5">
 
                         <TextView
@@ -94,7 +94,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:text="Document"
-                            android:textColor="#ffffff"
+                            android:textColor="#fe6900"
                             android:textStyle="bold"
 
                             app:layout_constraintBottom_toBottomOf="parent"
