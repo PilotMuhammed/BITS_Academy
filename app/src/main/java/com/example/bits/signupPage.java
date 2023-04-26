@@ -30,23 +30,16 @@ public class signupPage extends AppCompatActivity {
         String InputRePassword = rePassword.getText().toString();
 
 
-        Intent intent = new Intent(signupPage.this,ViewPage.class);
-        intent.putExtra("",InputUser);
-        startActivity(intent);
 
 
-//        if (InputUser.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty() || InputRePassword.isEmpty()){
-//            Toast.makeText(this,"Fields must be filled",Toast.LENGTH_LONG).show();
-//        }
-//        else {
-//
-//            if (InputRePassword != InputPassword){
-//                Toast.makeText(this,"The Password does not match",Toast.LENGTH_LONG).show();
-//            }
-//            else {
-//
-//            }
-//        }
+
+        if (InputUser.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty() || InputRePassword.isEmpty()){
+            Toast.makeText(this,"Fields must be filled",Toast.LENGTH_LONG).show();
+        } else {
+            Intent intent = new Intent(signupPage.this,ViewPage.class);
+            intent.putExtra("",InputUser);
+            startActivity(intent);
+        }
 
     }
 }

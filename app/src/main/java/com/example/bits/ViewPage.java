@@ -12,7 +12,7 @@ public class ViewPage extends AppCompatActivity {
 
     TextView showUser;
     ImageView imgClick;
-    CardView c1;
+    CardView c1 ,c2 ,c3 ,c4 ,c5;
 
 //    RecyclerView rv_1 ;
 //    ArrayList<String> dataSource;
@@ -28,6 +28,30 @@ public class ViewPage extends AppCompatActivity {
         c1 = findViewById(R.id.Card_new_1);
         c1.setOnClickListener(view -> {
             Intent intent = new Intent(ViewPage.this, details_1.class);
+            startActivity(intent);
+        });
+        /*--- Show Card Two From Section New  ---*/
+        c2 = findViewById(R.id.Card_new_2);
+        c2.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this, details_2.class);
+            startActivity(intent);
+        });
+        /*--- Show Card Three From Section New  ---*/
+        c3 = findViewById(R.id.Card_new_3);
+        c3.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this, details_3.class);
+            startActivity(intent);
+        });
+        /*--- Show Card Four From Section New  ---*/
+        c4 = findViewById(R.id.Card_new_4);
+        c4.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this, details_4.class);
+            startActivity(intent);
+        });
+        /*--- Show Card Five From Section New  ---*/
+        c5 = findViewById(R.id.Card_new_5);
+        c5.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewPage.this, details_5.class);
             startActivity(intent);
         });
 
