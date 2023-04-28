@@ -11,12 +11,11 @@ import android.widget.Toast;
 public class signupPage extends AppCompatActivity {
 
     EditText user ,email ,password ,rePassword;
-    Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
-
     }
 
     public void sendDataSignup(View view) {
@@ -29,17 +28,14 @@ public class signupPage extends AppCompatActivity {
         String InputPassword = password.getText().toString();
         String InputRePassword = rePassword.getText().toString();
 
-
-
-
-
         if (InputUser.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty() || InputRePassword.isEmpty()){
             Toast.makeText(this,"Fields must be filled",Toast.LENGTH_LONG).show();
+        } else if(! InputPassword.equals(InputRePassword)){
+            Toast.makeText(this,"Passwords must be match",Toast.LENGTH_LONG).show();
         } else {
             Intent intent = new Intent(signupPage.this,ViewPage.class);
             intent.putExtra("",InputUser);
             startActivity(intent);
         }
-
     }
 }
